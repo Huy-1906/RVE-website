@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+        "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+    }
+    </script>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== Title===============-->
+
+    <title>Chương trình chia lưới mô phỏng mô hình RVE thành các phần tử tam giác </title>
+</head>
+<body>
+    <!--=============== Header ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="#" class="nav__logo">
+                <i class="index.html"></i> 空天征
+                </a>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__burger"></i>
+                <i class="ri-close-line nav__close"></i>
+            </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                <li><a href="https://drive.google.com/file/d/1kXdTpr_8KRNpApryMR7DY1govrD5lqEa/view?usp=drive_link" class="nav__link">Về chúng tôi</a></li>
+                <!--=============== DROPDOWN 1 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Tài nguyên <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                        <li>
+                            <a href="https://drive.google.com/file/d/1OyR_Df1itqa7rNWSLx9ZuvHkVVzM-fv0/view?usp=drive_link" class="dropdown__link">
+                            <i class="ri-pie-chart-line"></i> Tổng quan <!--README.md-->
+                            </a>                          
+                        </li>
+
+                        <li>
+                            <a href="https://drive.google.com/drive/folders/1PdFKZ_A8xromvGBLpRYkeak1T14kGc5B?usp=drive_link" class="dropdown__link">
+                            <i class="ri-arrow-up-down-line"></i> Hình ảnh mô phỏng
+                            </a>
+                        </li>
+
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                            <i class="ri-bar-chart-line"></i> Tài liệu <i class="ri-add-line dropdown__add"></i>
+                            </div>
+
+                            <ul class="dropdown__submenu">
+                            <li>
+                                <a href="https://drive.google.com/file/d/1OyR_Df1itqa7rNWSLx9ZuvHkVVzM-fv0/view?usp=sharing" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> Báo cáo khoa học
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://drive.google.com/drive/folders/14-RCuBhUKsFnrna1gziUdmPK38irks9x?usp=drive_link" class="dropdown__sublink">
+                                    <i class="ri-source-code-line"></i> Source code
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://drive.google.com/file/d/1OyR_Df1itqa7rNWSLx9ZuvHkVVzM-fv0/view" class="dropdown__sublink">
+                                    <i class="ri-ldetail-line"></i> Chi tiết
+                                </a>
+                            </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+
+                <!--=============== DROPDOWN 2 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                        <li>
+                            <a href="https://www.facebook.com/lygiahuy.huy.7/" class="dropdown__link">
+                            <i class="ri-user-line"></i> Tài khoản
+                            </a>                          
+                        </li>
+
+                        <li>
+                            <a href="https://drive.google.com/file/d/1tQREaqTfB8S8K3I2fFerolTAK7rkkjS4/view?usp=drive_link" class="dropdown__link">
+                            <i class="ri-lock-line"></i> Hồ sơ
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="dropdown__link">
+                            <i class="ri-message-3-line"></i> Liên lạc
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="https://www.linkedin.com/in/gia-huy-lý-77a496270/" class="nav__link">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <!-- Announcing button-->
+                                    <br>
+                                <br>
+                            <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        
+                        <video id="video" autoplay muted loop 
+                            <source src="assets/videos/cube.mp4" width="600"> 
+                        </video>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+        <button>Announcing our solution</button>	
+            <div class ="section" id="banner">
+		<div class="content-fit"> </div>
+       <!-- <img class="3D-icon" src="assets/RVE model pics/3D-icon.png" alt="3D-icon" width="80"> -->   <!--Homepage-->
+        <br>
+    <div class="container">
+        <h1 class="text">CHƯƠNG TRÌNH<span>MÔ HÌNH</span></h1>
+        <h1 class="text">CHIA LƯỚI △<span>MÔ PHỎNG</span></h1>
+        <h1 class="text">MÔ HÌNH RVE<span>SORA TENSEI</span></h1>
+        <h1 class="text">LIÊN HỆ<span><a href="https://drive.google.com/file/d/1OyR_Df1itqa7rNWSLx9ZuvHkVVzM-fv0/view" target="_blank">CONTACT</a></span></h1>
+        <h1 class="text">LIKE THIS?<span><a href="https://drive.google.com/file/d/1OyR_Df1itqa7rNWSLx9ZuvHkVVzM-fv0/view" target="_blank">LET'S BEGIN!</a></span></h1>
+    </div>
+    <br>
+    <br>
+
+    <div class="content-fit"> </div>
+    <p>Mô hình RVE là giải pháp giải quyết bằng cách đơn giản hóa bài toán kỹ thuật phức tạp</p> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <!-- Subpage -->
+    <h1 id="headline_1_a"> Đi từ công nghệ lõi của mô hình </h1>
+    <h1 id="RVE">RVE</h1>
+    <h1 id="headline_1_b">dưới dạng</h1>
+    <h1 id="a_2D">2D</h1>
+    <img id="a2D_Model" src="assets/RVE model pics/1.png" alt="2D RVE" width="763">
+    <div class="content-fit"> 
+<h3 id="ex_text_1">Mô hình RVE giúp biểu thị tính chất vi mô, liên kết với đặc điểm vĩ mô. Giảm chi phí thời gian và phân tích.</h3>
+<h3 id="ex_text_2">Phép Tam giác hóa Delaunay: Chia tập hợp điểm trên mặt phẳng thành các tam giác tập hợp. Được dùng để tối ưu lưới.</h3>
+</div>
+<!-- 3 ảnh 2D card hoverhover-->
+    
+<br>
+<br>
+<section class="articles">
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src ="assets/RVE model pics/2.png" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Mô hình 1</h2>
+          <p>
+            Cải thiện thị giác
+          </p>
+          <a href="#" class="read-more">
+            Tìm hiểu thêm <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+  
+      <div class="article-wrapper">
+        <figure>
+          <img src="assets/RVE model pics/3.png" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Mô hình 2</h2>
+          <p>Nội lực tại tâm đường tròn</p>
+          <a href="#" class="read-more">
+            Tìm hiểu thêm <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+  
+      <div class="article-wrapper">
+        <figure>
+          <img src="assets/RVE model pics/4.png" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Mô hình 3</h2>
+          <p>Mô phỏng: 𝛁𝝈{𝒊𝒋} + 𝑷𝒊 = 𝟎</p>
+          <a href="#" class="read-more">
+            Tìm hiểu thêm <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <!-- Mô hình 3D -->
+        <h1 id="headline_2_a">Ứng dụng. Cải tiến</h1>
+        <h1 id="headline_2_b">Bằng mô hình hóa 3 chiều</h1>
+        <div id="circle_2"></div>
+        <div id="circle_1"></div>
+        <img id="pic_8" class="3D-Model" src="assets/RVE model pics/8.png" alt="3D RVE" width="860">
+
+        <!--Ứng dụng thực nghiệm thực tế-->
+        <h2 id="headline_3_a">Để biến ước mơ ứng dụng</h2>
+        <h1 id="headline_3_b">Thực nghiệm, thực tế</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img id = "a3D-composite-Model" class="3D-composite-Model" src="assets/RVE model pics/7.png" alt="3D RVE " width="860">
+        <br>
+        <br>
+        <br>
+        <div id="container3D"></div>
+    <!--Contact page--> 
+    <p>Bản quyền © Sora Tensei Bảo lưu mọi quyền</p>
+width="335"> 
+    <p>Đồ án nhập môn kỹ thuật</p>
+    <p>Khoa Khoa học Ứng Dụng</p>
+    <p>Ngành Cơ Kỹ Thuật định hướng Nhật Bản</p>
+    <h4>Trường Đại học Bách Khoa - ĐHQG TP.HCM</h4>
+    <br>
+    <img class="HCMUT-logo" src="assets/logo/HCMUT.png" alt="HCMUT-logo" width="200"> 
+    <img class="KHUD-logo" src="assets/logo/KHUD.png" alt="KHUD-logo" width="100"> 
+<!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </div>
+</body> 
+</html>

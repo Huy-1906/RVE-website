@@ -1,0 +1,12 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "web",
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "cSpell.words": [
+        "chúng",
+        "guidelines"
+    ]
+}
